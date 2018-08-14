@@ -1,6 +1,7 @@
 {
   "name": "ortho-slider",
   "version": "0.0.0",
+   "author": "Brendan E. Mahon",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
@@ -20,6 +21,8 @@
     "@angular/platform-browser": "^6.0.3",
     "@angular/platform-browser-dynamic": "^6.0.3",
     "@angular/router": "^6.0.3",
+    "amazon-cognito-identity-js": "^2.0.20",
+    "aws-sdk": "^2.291.0",
     "core-js": "^2.5.4",
     "jquery": "^3.3.1",
     "rxjs": "^6.0.0",

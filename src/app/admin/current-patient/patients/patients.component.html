@@ -1,0 +1,16 @@
+
+<h2>My PATIENTS</h2>
+<ul class="patients">
+	<li *ngFor="let patient of patients" [class.selected]="patient === selectedPatient"
+ (click)="onSelect(patient)">
+    <span class="badge">{{patient.id}}</span> {{patient.name | uppercase}}
+  </li>
+</ul>
+
+<div *ngIf="selectedPatient">
+
+<div class="row">
+	<app-patientcosts></app-patientcosts>
+	<app-patientoptions></app-patientoptions>
+</div>
+<app-patientsliders></app-patientsliders>

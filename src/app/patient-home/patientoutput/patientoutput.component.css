@@ -1,0 +1,22 @@
+
+.results-well {
+    padding: 5px;
+}
+.results-well h3{
+    font-size:35px;
+	color: #7AAFD2;
+}
+.results-well p{
+    font-size:15px;
+	color: #7AAFD2;
+}
+.btn-smile {
+	width: 100%;
+    height: 75px;
+    border-radius: 10px; 
+    background: #A9D75E;
+}
+
+body {
+    margin:20px;
+} 

@@ -1,0 +1,73 @@
+<div class="container">
+    <div class="outer-well">
+        <div class="row">
+            <div class="col-sm-6">
+                <img src="../../../assets/img/Intro_Me_Logo_v1.9.png" class="img-responsive intro-me-logo">
+                    <form class="form-signin" method="POST" action="#" role="form">
+                        <div class="form-group" id="loginWord">
+                        </div>
+                        <div *ngIf="errorMessage!=null" class="alert alert-danger">
+                            {{ errorMessage }}
+                        </div>
+                            <div class="form-group">
+                                <label class="control-label" for="signupEmail">Email</label>
+                                <input id="signupEmail" required type="email" maxlength="100" class="form-control" [(ngModel)]="email"
+                                    [ngModelOptions]="{standalone: true}">
+                                    </div>
+                            
+                            <div class="form-group">
+                                <label class="control-label" for="signupPassword">Password</label>
+                                <input id="signupPassword" required type="password" maxlength="25" class="form-control"
+                                    length="40" [(ngModel)]="password" [ngModelOptions]="{standalone: true}">
+                                    </div>
+                            <div class="form-group">
+                                <button (click)="onLogin()" id="signupSubmit" type="submit" class="btn btn-info btn-block">Login</button>
+                            </div>
+                            
+                            <hr>
+                            <p>
+                            <a [routerLink]="['/home/register']"> Create new account</a><br>
+                            <a [routerLink]="['/home/forgotPassword']"> Forgot Password</a><br/>
+                            <a [routerLink]="['/home/resendCode']"> Resend Confirmation Code</a>
+                            </p>
+
+                    </form>
+                    </div>
+            <div class="col-sm-6">
+                <div class="inner-well">
+                    <div class="row">
+                        <div class="col-xs-4">
+                            <img src="../../../assets/img/Help.png" class="img-responsive inbound-networking-icon">
+                                </div>
+                        <div class="col-xs-4">
+                            <img src="../../../assets/img/arrow.png" class="img-responsive inbound-networking-icon">
+                                </div>
+                        <div class="col-xs-4">
+                            <img src="../../../assets/img/Connect.png" class="img-responsive inbound-networking-icon">
+                                </div>
+                    </div>
+                    <div class="row">
+                        <div class="text-center inbound-networking">
+                            <br>
+                            INBOUND NETWORKING
+                            <br>
+                            <br>
+                            Stop focusing on your digital brand
+                            <br>
+                            Stop spending 85% of your time on something only 15% effective
+                            <br>
+                            Take a more direct route...
+                            <br>
+                            Intro-Me is a platform designed around helping ambitious people activate their network to acheive their goals
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br>
+    <div class="disclaimer"> Intro-Me LLC 2018 ©. All rights reserved...legal jargon...blah blah...lorem ipsum dolor etc etc </div>
+</div>
+
+
+
