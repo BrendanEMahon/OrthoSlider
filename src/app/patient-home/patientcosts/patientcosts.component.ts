@@ -6,9 +6,14 @@ import { Patient } from '../../patient';
   templateUrl: './patientcosts.component.html',
   styleUrls: ['./patientcosts.component.css']
 })
+
+export class selectedPatient {
+    public selectedPatient: Patient;
+}
+
 export class PatientcostsComponent implements OnInit {
 
-selectedPatient: Patient;
+    public selectedPatient: Patient;
 
   constructor() { }
 

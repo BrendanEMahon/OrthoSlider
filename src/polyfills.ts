@@ -43,7 +43,7 @@
 
 /** Evergreen browsers require these. **/
 // Used for reflect-metadata in JIT. If you use AOT (and only Angular decorators), you can remove.
-import 'core-js/es7/reflect';
+import 'reflect-metadata';
 
 
 /**
@@ -80,7 +80,6 @@ import 'zone.js/dist/zone';  // Included with Angular CLI.
  * APPLICATION IMPORTS
  */
 
-
 import "core-js/es6/symbol";
 import "core-js/es6/object";
 import "core-js/es6/function";
@@ -94,8 +93,6 @@ import "core-js/es6/array";
 import "core-js/es6/regexp";
 import "core-js/es6/map";
 import "core-js/es6/set";
-import "core-js/es6/reflect";
-import "core-js/es7/reflect";
 import "zone.js/dist/zone";
 
 (window as any).global = window;
